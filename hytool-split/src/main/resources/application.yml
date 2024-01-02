@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://172.16.30.252:1433;database=EAI;encrypt=true;trustServerCertificate=true
+    username: imosadmin
+    password: imos
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    hikari:
+      maximum-pool-size: 1
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

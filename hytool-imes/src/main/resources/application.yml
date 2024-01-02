@@ -1,0 +1,11 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    url: jdbc:sqlserver://172.16.30.254:1433;database=IMES_royal;encrypt=true;trustServerCertificate=true
+    username: zbx
+    password: abc.123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
