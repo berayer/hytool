@@ -13,8 +13,12 @@ import SiderMenu from './components/SiderMenu.vue'
     </el-aside>
     <el-container>
       <el-header class="bg-red-200" height="56px">Header</el-header>
-      <el-main class="bg-yellow-200">
-        <router-view />
+      <el-main class="main-container bg-yellow-200">
+        <el-scrollbar>
+          <div class="p-5">
+            <router-view />
+          </div>
+        </el-scrollbar>
       </el-main>
       <el-footer class="flex-center" height="28px">
         <span class="select-none text-sm text-gray-500">© 最终解释权归zbx所有</span>

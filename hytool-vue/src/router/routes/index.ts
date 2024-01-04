@@ -22,8 +22,27 @@ export const constantRoutes: RouteRecordRaw[] = [
     ]
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/_/Login.vue')
+  },
+  {
     path: '/404',
     name: 'PageNotFound',
     component: () => import('@/views/_/404.vue')
+  },
+  {
+    path: '/403',
+    name: 'Forbidden',
+    component: () => import('@/views/_/403.vue')
+  },
+  {
+    path: '/500',
+    name: 'Error',
+    component: () => import('@/views/_/500.vue')
+  },
+  {
+    path: '/:path(.*)',
+    redirect: '/404'
   }
 ]

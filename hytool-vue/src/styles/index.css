@@ -7,3 +7,7 @@
     @apply flex items-center justify-center;
   }
 }
+
+.main-container {
+  --el-main-padding: 0
+}
