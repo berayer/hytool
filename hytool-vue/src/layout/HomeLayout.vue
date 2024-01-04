@@ -1,12 +1,24 @@
+<script setup lang="ts">
+import SiderLogo from './components/SiderLogo.vue'
+import SiderMenu from './components/SiderMenu.vue'
+</script>
+
 <template>
-  <el-container>
-    <el-aside width="200px">Aside</el-aside>
+  <el-container class="h-screen">
+    <el-aside width="208px" class="bg-blue-200">
+      <el-scrollbar>
+        <sider-logo />
+        <sider-menu />
+      </el-scrollbar>
+    </el-aside>
     <el-container>
-      <el-header>Header</el-header>
-      <el-main>
+      <el-header class="bg-red-200" height="56px">Header</el-header>
+      <el-main class="bg-yellow-200">
         <router-view />
       </el-main>
-      <el-footer>Footer</el-footer>
+      <el-footer class="flex-center" height="28px">
+        <span class="select-none text-sm text-gray-500">© 最终解释权归zbx所有</span>
+      </el-footer>
     </el-container>
   </el-container>
 </template>

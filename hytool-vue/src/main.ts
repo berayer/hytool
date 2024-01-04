@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { setupRouter } from '@/router'
 
+import '@/styles/index.css'
+
 async function setupApp() {
   const app = createApp(App)
   // 按照路由
